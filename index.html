@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple sign in</title>
+  </head>
+  <body>
+    <main class="card">
+      <section id="login-view" aria-labelledby="login-title">
+        <h1 id="login-title">User Login</h1>
+        <p class="intro">Please enter your credentials to login</p>
+
+        <form id="login-form" aria-label="Login" novalidate>
+          <label class="visually-hidden" for="login-email">Email</label>
+          <input id="login-email" name="email" type="email" placeholder="Email" autocomplete="email" />
+
+          <label class="visually-hidden" for="login-password">Password</label>
+          <input id="login-password" name="password" type="password" placeholder="Password" autocomplete="current-password" />
+
+          <div class="forgot-wrap">
+            <a id="forgot-link" href="#forgot" aria-describedby="forgot-tooltip">Forgot password?</a>
+            <span id="forgot-tooltip" class="tooltip" role="tooltip">Planned for Q4 2029. Subject to prioritization.</span>
+          </div>
+          <p id="forgot-message" class="message" role="status"></p>
+
+          <button type="submit">Login</button>
+          <p id="login-message" class="message" role="alert"></p>
+        </form>
+
+        <p class="form-link right"><a href="#signup">Don't have an account? Register</a></p>
+      </section>
+
+      <section id="signup-view" aria-labelledby="signup-title" hidden>
+        <h1 id="signup-title">Sign Up</h1>
+        <p class="intro">Please fill in your basic info</p>
+
+        <form id="signup-form" aria-label="Registration" novalidate>
+          <label class="visually-hidden" for="signup-username">Username</label>
+          <input id="signup-username" name="username" type="text" placeholder="Username" autocomplete="username" />
+
+          <label class="visually-hidden" for="signup-email">Email</label>
+          <input id="signup-email" name="email" type="email" placeholder="Email" autocomplete="email" />
+
+          <label class="visually-hidden" for="signup-password">Password</label>
+          <input id="signup-password" name="password" type="password" placeholder="Password" autocomplete="new-password" />
+
+          <label class="terms"><input id="signup-terms" name="terms" type="checkbox" /> I agree to the terms of use and privacy</label>
+          <button type="submit">Register</button>
+          <p id="signup-message" class="message" role="alert"></p>
+        </form>
+
+        <p class="form-link center"><a href="#login">Already have an account? Log in here</a></p>
+      </section>
+
+      <section id="account-view" aria-labelledby="account-title" hidden>
+        <h1 id="account-title">Welcome</h1>
+        <p id="account-name"></p>
+        <button id="logout-button" type="button">Logout</button>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
