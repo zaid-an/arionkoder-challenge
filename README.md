@@ -43,4 +43,4 @@ Playwright writes an HTML report to `playwright-report/`. The Allure reporter wr
 The forgot-password link is an interactive placeholder. It displays the planned-release message on hover and click; password recovery is outside this demo.
 
 
-This modification I made  for the video demo only :)
+This modification I made  for the video demo only, cheers :)
