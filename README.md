@@ -41,3 +41,5 @@ Keep `npm run dev` running in one terminal and run `npm test` in another. Playwr
 Playwright writes an HTML report to `playwright-report/`. The Allure reporter writes raw results to `allure-results/`; if you have the Allure CLI installed, run `allure serve allure-results` to view them. GitHub Actions runs the build and tests on pushes and pull requests to `main`, then uploads both report directories as artifacts even if tests fail.
 
 The forgot-password link is an interactive placeholder. It displays the planned-release message on hover and click; password recovery is outside this demo.
+
+This modifications is for demo purposes only
